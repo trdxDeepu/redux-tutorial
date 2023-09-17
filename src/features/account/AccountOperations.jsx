@@ -22,6 +22,7 @@ function AccountOperations() {
     dispatch(deposit(depositAmount,currency));
     // localStorage.setItem("depositAmount", depositAmount)
     setDepositAmount("");
+    setCurrency("")
   }
 
   function handleWithdrawal() {

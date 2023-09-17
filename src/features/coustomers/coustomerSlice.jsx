@@ -16,10 +16,10 @@ export default function coustomerReducer(
         nationalId: action.payload.nationalId,
         createdAt: action.payload.createdAt,
       };
-    case "account/updateName":
+    case "coustomer/updateName":
       return {
         ...state,
-        fullName: action.payload.fullName,
+        fullName: action.payload,
       };
     default:
       return state;
@@ -35,7 +35,7 @@ export function createCoustomer(fullName, nationalId) {
 
 export function updateName(fullName) {
   return {
-    type: "account/updateName",
+    type: "coustomer/updateName",
     payload: fullName,
   };
 }
